@@ -12,7 +12,7 @@ export default function ImageGallery() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {images.map((image) => (
                     <div key={image.id} className="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-gray-900">
-                        <Image src={image.src} alt={image.alt} className="h-full w-full object-cover" />
+                        <Image src={image.src} width={600} height={400} alt={image.alt} className="h-full w-full object-cover" />
                     </div>
                 ))}
             </div>
